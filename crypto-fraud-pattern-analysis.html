@@ -7483,7 +7483,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Fraud-Pattern-Analysis-for-a-Crypto-Exchange">Fraud Pattern Analysis for a Crypto Exchange<a class="anchor-link" href="#Fraud-Pattern-Analysis-for-a-Crypto-Exchange">¶</a></h1><h3 id="An-Explanatory-Data-Analysis-Consulting-Report">An Explanatory Data Analysis Consulting Report<a class="anchor-link" href="#An-Explanatory-Data-Analysis-Consulting-Report">¶</a></h3><p><strong>Prepared for:</strong> a mid-sized crypto exchange's Fraud &amp; Compliance team
-<strong>Prepared by:</strong> Iman Ashoori - GH1049062, Data Science Consultant ;)</p>
+<strong>Prepared by:</strong> Iman Ashoori, Data Science Consultant ;)</p>
 </div>
 </div>
 </div>
@@ -7758,6 +7758,18 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1a99c6f88d3525ae">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Interpretation:</strong> scam rates are strikingly flat across both dimensions 6.8% to 7.6% across blockchains, 6.7% to 8.6% across platforms. OpenSea is highest at 8.55%, but with ~2,000 transactions per platform, a 1-2 point gap is within sampling noise.</p>
+<p><strong>Business takeaway:</strong> contrary to intuition, <em>where</em> a transaction happens is not a useful basis for prioritizing fraud monitoring here.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2abfdb1378985fb5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7794,6 +7806,18 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ceb2e8cade25c1d4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Interpretation:</strong> both cuts show only mild variation. Hourly scam rate ranges from roughly 5% to 9% across the day with no clear peak window, and the weekly view shows Sunday slightly elevated (~8.5%) against a Tuesday low (~6.5%).</p>
+<p><strong>Business takeaway:</strong> unlike many real-world fraud datasets, this data does not show scammers concentrating activity in specific hours or days.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=87b1fe4124ed974f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7821,6 +7845,18 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ca0b6883ab839b3b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Interpretation:</strong> across every signal, unidentified platforms are statistically indistinguishable from known ones, scam rate (6.80% vs 7.36%), anomaly score, failed-transaction ratio, velocity score, and amount.</p>
+<p><strong>Business takeaway:</strong> the assumption that unidentified counterparties are inherently riskier is not supported by this data.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2c9b09f179557d2f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7844,6 +7880,18 @@ a.anchor-link {
 <span class="n">age_scam_rate</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6521c5548211042b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Interpretation:</strong> this is the strongest pattern in the dataset. Wallets younger than 30 days show a <strong>45.8% scam rate</strong>, roughly 9x higher than every other age group.</p>
+<p><strong>Business takeaway:</strong> wallet age is a highly actionable, real-time-available signal for the compliance team.</p>
 </div>
 </div>
 </div>
@@ -7880,6 +7928,18 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=60e3f2aecf16f3b1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Interpretation:</strong> <code>anomaly_score</code> correlates with <code>is_scam</code> at only 0.079 weaker than the simpler <code>failed_txn_ratio_sender</code> feature (0.158).</p>
+<p><strong>Business takeaway:</strong> the client's existing anomaly_score should not be treated as a primary decision signal.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fa88b8dc54380f66">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7904,7 +7964,18 @@ The main limitation is that the dataset is <strong>fully synthetic</strong>, wit
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c86def2a26924bc3">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=39dc689c64d057fe">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><p>Hussnain, M. (2024) <em>Crypto Scam Transaction Dataset</em>. Available at: <a href="https://www.kaggle.com/datasets/muhammadhussnain09/crypto-scam-transaction-dataset">https://www.kaggle.com/datasets/muhammadhussnain09/crypto-scam-transaction-dataset</a> (Accessed: 09/09/2026).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=24606d9a5abab070">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
